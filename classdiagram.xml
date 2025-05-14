@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Class Diagram" id="class-diagram-id">
+    <mxGraphModel dx="1292" dy="823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- User Class -->
+        <mxCell id="user" value="User&#xa;--&#xa;+ id: String&#xa;+ name: String&#xa;+ email: String&#xa;+ password: String&#xa;+ role: String&#xa;+ verified: Boolean" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="200" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Listing Class -->
+        <mxCell id="listing" value="Listing&#xa;--&#xa;+ id: String&#xa;+ ownerId: String&#xa;+ rent: Number&#xa;+ location: String&#xa;+ amenities: String&#xa;+ images: String[]" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="200" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Chat Class -->
+        <mxCell id="chat" value="Chat&#xa;--&#xa;+ id: String&#xa;+ user1Id: String&#xa;+ user2Id: String&#xa;+ messages: Message[]" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="300" width="200" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Message Class -->
+        <mxCell id="message" value="Message&#xa;--&#xa;+ id: String&#xa;+ senderId: String&#xa;+ content: String&#xa;+ timestamp: Date" style="shape=umlClass;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="300" width="200" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <mxCell id="rel1" style="endArrow=none;dashed=0;" edge="1" parent="1" source="listing" target="user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel2" style="endArrow=none;dashed=0;" edge="1" parent="1" source="chat" target="user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel3" style="endArrow=none;dashed=0;" edge="1" parent="1" source="message" target="chat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel4" style="endArrow=none;dashed=0;" edge="1" parent="1" source="message" target="user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
