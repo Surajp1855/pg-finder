@@ -13,6 +13,7 @@ const {addRoleID} = require("./middlewares/common");
 const cron = require('node-cron');
 
 /* SERVER CONFIGURATIONS */
+
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(methodOverride('_method'));
@@ -76,6 +77,8 @@ app.get('/', (req, res) => {
     });
 });
 
+const healthRoute = require('./routes/healthcheck');
+app.use('/health', healthRoute);
 const {stateUTList, cityMap} = require('./utils/state_city_provider');
 app.get('/state-list', (req, res) => {
     res.send(stateUTList);
