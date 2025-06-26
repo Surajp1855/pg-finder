@@ -1,4 +1,4 @@
-# Contributing to PG Finder v2
+# Contributing to PG Finder (Roomzzy)
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
 - Reporting a bug
@@ -25,8 +25,8 @@ follow under steps for it to be recognized.
 In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
 
 ## Report Bugs 
-Report bugs using GitHub's [issues](https://github.com/aryan-upa/pg-finder-v2/issues)
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/aryan-upa/pg-finder-v2/issues/new); it's that easy!
+Report bugs using GitHub's [issues](https://github.com/surajp1855/pg-finder/issues)
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/surajp1855/pg-finder/issues/new); it's that easy!
 
 Follow the bug report template to create detailed bug report, that way it'll be easier to recreate and can easily be 
 removed.
